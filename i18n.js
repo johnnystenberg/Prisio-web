@@ -97,6 +97,7 @@
       "final.note": "Free to start · Pro is a one-time $12.99",
       "foot.support": "Support",
       "foot.privacy": "Privacy",
+      "foot.terms": "Terms",
       "foot.contact": "Contact",
       "foot.lang": "Language",
       "foot.madefor": "Made for travelers"
@@ -190,6 +191,7 @@
       "final.note": "Gratis att börja · Pro är ett engångsköp på 129 kr",
       "foot.support": "Support",
       "foot.privacy": "Integritet",
+      "foot.terms": "Villkor",
       "foot.contact": "Kontakt",
       "foot.lang": "Språk",
       "foot.madefor": "Gjord för resenärer"
@@ -283,6 +285,7 @@
       "final.note": "Gratis starten · Pro ist ein Einmalkauf für 11,99 €",
       "foot.support": "Support",
       "foot.privacy": "Datenschutz",
+      "foot.terms": "Nutzungsbedingungen",
       "foot.contact": "Kontakt",
       "foot.lang": "Sprache",
       "foot.madefor": "Für Reisende gemacht"
@@ -376,6 +379,7 @@
       "final.note": "Gratuit pour commencer · Pro est un achat unique de 11,99 €",
       "foot.support": "Assistance",
       "foot.privacy": "Confidentialité",
+      "foot.terms": "Conditions",
       "foot.contact": "Contact",
       "foot.lang": "Langue",
       "foot.madefor": "Pensé pour les voyageurs"
@@ -469,6 +473,7 @@
       "final.note": "Gratis para empezar · Pro cuesta 11,99 € una sola vez",
       "foot.support": "Soporte",
       "foot.privacy": "Privacidad",
+      "foot.terms": "Términos",
       "foot.contact": "Contacto",
       "foot.lang": "Idioma",
       "foot.madefor": "Hecha para viajeros"
@@ -561,6 +566,7 @@
       "final.note": "Gratis per iniziare · Pro è un acquisto una tantum di 11,99 €",
       "foot.support": "Supporto",
       "foot.privacy": "Privacy",
+      "foot.terms": "Termini",
       "foot.contact": "Contatti",
       "foot.lang": "Lingua",
       "foot.madefor": "Fatta per chi viaggia"
@@ -653,6 +659,7 @@
       "final.note": "Grátis para começar · O Pro é um pagamento único de 11,99 €",
       "foot.support": "Suporte",
       "foot.privacy": "Privacidade",
+      "foot.terms": "Termos",
       "foot.contact": "Contacto",
       "foot.lang": "Idioma",
       "foot.madefor": "Feito para viajantes"
@@ -745,6 +752,7 @@
       "final.note": "無料で始められます · Proは買い切り¥1,500",
       "foot.support": "サポート",
       "foot.privacy": "プライバシー",
+      "foot.terms": "利用規約",
       "foot.contact": "お問い合わせ",
       "foot.lang": "言語",
       "foot.madefor": "旅する人のために"
@@ -837,6 +845,7 @@
       "final.note": "Gratis om te beginnen · Pro is eenmalig € 11,99",
       "foot.support": "Support",
       "foot.privacy": "Privacy",
+      "foot.terms": "Voorwaarden",
       "foot.contact": "Contact",
       "foot.lang": "Taal",
       "foot.madefor": "Gemaakt voor reizigers"
@@ -929,6 +938,7 @@
       "final.note": "Zacznij za darmo · Pro to jednorazowe 49,99 zł",
       "foot.support": "Pomoc",
       "foot.privacy": "Prywatność",
+      "foot.terms": "Regulamin",
       "foot.contact": "Kontakt",
       "foot.lang": "Język",
       "foot.madefor": "Stworzone dla podróżników"
@@ -954,6 +964,7 @@
   }
 
   function pageHref(page, lang) {
+    if (page === "terms") return lang === "sv" ? "terms.sv.html" : "terms.html";
     return lang === "en" ? page + ".html" : page + "." + lang + ".html";
   }
 
